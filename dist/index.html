@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favico.png" type="image/x-icon">
+    <title>Desarrollo de Aplicaciones Fron End</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-around text-center">
+            <!-- <i class="fa-solid fa-ghost"></i> -->
+            <h1 class="display-5 text-danger"><i class="fa-brands fa-d-and-d me-2"></i>DRAGON BALL BATTLE<i class="fa-brands fa-d-and-d ml-2"></i></h1>
+            <hr class="text-danger">
+            <div class="col-md-5">
+                <h2><i class="fa-solid fa-gamepad me-2"></i>Jugador 1</h2>
+                <hr class="text-danger">
+                <div class="mb-3" id="cargar_usuario1">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="usuario1" placeholder="Nombre de Usuario">
+                        <label for="usuario1"><i class="fa-solid fa-user-astronaut me-2"></i>Nombre de usuario</label>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-danger rounded-circle">
+                                <img src="./public/img/seleccion/sc01.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Vegito">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-danger rounded-circle">
+                                <img src="./public/img/seleccion/sc03.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Trunks">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-danger rounded-circle">
+                                <img src="./public/img/seleccion/sc05.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Goku">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-danger rounded-circle">
+                                <img src="./public/img/seleccion/sc06.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Gohan">
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger w-100" id="btn_player1"><i class="fa-solid fa-circle-play me-2"></i>Iniciar</button>
+                </div>
+                <div id="seleccion1" class="d-none">
+                    <img class="mx-auto d-block" src="./public/img/Goku/base.png" alt="Player" width="40%">
+                    <h1 class="display-5 text-uppercase" id="user_p1"></h1>
+                    <button type="button" class="btn btn-warning mb-3"><i class="fa-solid fa-khanda me-2"></i>Ataque Basico</button>
+                    <button type="button" class="btn btn-danger mb-3"><i class="fa-solid fa-khanda me-2"></i>Ataque Especial</button>
+                    <button type="button" class="btn btn-primary mb-3"><i class="fa-solid fa-hospital-user me-2"></i>Semilla del ermitaño <span class="badge bg-secondary">4</span></button>
+                    <button type="button" class="btn btn-success mb-3"><i class="fa-solid fa-bed-pulse me-2"></i>Cargar energia</button>
+                </div>
+            </div>
+            <div class="col-2 align-self-center">
+                <h1 class="display-3">VS</h1>
+            </div>
+            <div class="col-md-5">
+                <h2><i class="fa-solid fa-gamepad me-2"></i>Jugador 2</h2>
+                <hr class="text-danger">
+                <div class="mb-3" id="cargar_usuario2">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="usuario2" placeholder="Nombre de Usuario">
+                        <label for="usuario2"><i class="fa-solid fa-user-astronaut me-2"></i>Nombre de usuario</label>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-primary rounded-circle">
+                                <img src="./public/img/seleccion/sc02.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Veguetta">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-primary rounded-circle">
+                                <img src="./public/img/seleccion/sc04.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Pikoro">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-primary rounded-circle">
+                                <img src="./public/img/seleccion/sc07.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Gogeta">
+                            </button>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <button type="button" class="btn btn-primary rounded-circle">
+                                <img src="./public/img/seleccion/sc08.webp" class="img-fluid mx-auto rounded-circle my-1" alt="Cell">
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-100" id="btn_player2"><i class="fa-solid fa-circle-play me-2"></i>Iniciar</button>
+                </div>
+                <div id="seleccion2" class="d-none">
+                    <img class="mx-auto d-block" src="./public/img/Veguetta/base.png" alt="Player" width="40%">
+                    <h1 class="display-5 text-uppercase" id="user_p2"></h1>
+                    <button type="button" class="btn btn-warning mb-3"><i class="fa-solid fa-khanda me-2"></i>Ataque Basico</button>
+                    <button type="button" class="btn btn-danger mb-3"><i class="fa-solid fa-khanda me-2"></i>Ataque Especial</button>
+                    <button type="button" class="btn btn-primary mb-3"><i class="fa-solid fa-hospital-user me-2"></i>Semilla del ermitaño</button>
+                    <button type="button" class="btn btn-success mb-3"><i class="fa-solid fa-bed-pulse me-2"></i>Cargar energia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
