@@ -8,7 +8,6 @@ class Game {
     constructor(user_name   ) {
         this.#user_name = user_name        
     }
-
     getVida(){
         return this.#vida;
     }
@@ -17,7 +16,8 @@ class Game {
     }
     getSemilla(){
         return this.#semilla;
-    }getEnergia(){
+    }
+    getEnergia(){
         return this.#energia;
     }
     getUser_name(){
@@ -48,14 +48,14 @@ class Game {
         this.#energia -= this.#energia < 20 ? 0 : 20;
         jugador.setVida(30)
     }
+    cargar_ki(){
+        this.setKi(15)
+    }
     semilla_ermi(){
         this.#semilla -= 1;
         this.aumentoVida(50)
         this.setKi(40)
         this.setEnergia(45)
-    }
-    ki(){
-        this.#ki += this.#ki < 0 ? 0 : 5;
     }
 }
 
