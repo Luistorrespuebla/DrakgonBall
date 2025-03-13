@@ -11,11 +11,11 @@
     <div class="container">
         <div class="row justify-content-center mt-2">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-danger">
+                <h5 class="display-4 text-danger">
                     <i class="fa-solid fa-cloud me-3"></i>
                     KAME-HOUSE - GAME
                     <i class="fa-brands fa-battle-net"></i>
-                </h1>
+                </h5>
                 <hr class="text-danger">
             </div>
 
@@ -69,8 +69,10 @@
 
             <div id="iniciar_juego" class="row d-none">
                 <div id="player1_avatar" class="col-md-5 text-center">
-                    <h2 id="p1" class="text-danger">TEST</h2>
-                    <div class="rounded-3 p-3" style="background: rgb(255, 2555, 255,0.6);">
+                    <h2 id="p1" class="text-danger ms-3 me-3">TEST</h2>
+                    <p id="contadorIzquierdo" class="fs-3 mt-2"></p>  
+                
+                    <div class="rounded-3 p-3" style="background: rgb(255, 255, 255, 0.6);">
                         <div class="row">
                             <div class="col-2">
                                 <p class="text-info">VIDA</p>
@@ -108,21 +110,23 @@
                             </div>
                         </div>
                     </div>
-    
+                
                     <img id="avatar1" class="mx-auto d-block" src="./public/img/Goku/base.png" width="40%">
                     <button id="btn_atk_py1" type="button" class="btn btn-primary mb-3">ATK Basico</button>
                     <button id="btn_esp_py1" type="button" class="btn btn-danger mb-3">ATK Especial</button>
                     <button id="btn_ermi_py1" type="button" class="btn btn-success mb-3">Semilla <span id="se_p1" class="badge bg-warning">3</span></button>
                     <button id="btn_ki_py1" type="button" class="btn btn-warning mb-3">Cargar Ki</button>
                 </div>
-    
+                
                 <div id="lucha" class="col-2 text-center align-self-center">
                     <h1 class="display-1 text-dark">VS</h1>
                 </div>
-    
+                
                 <div id="player2_avatar" class="col-md-5 text-center">
-                    <h2 id="p2" class="text-primary">Test</h2>
-                    <div class="rounded-3 p-3" style="background: rgb(255, 2555, 255,0.6);">
+                    <h2 id="p2" class="text-primary ms-3 me-3">Test</h2>
+                    <p id="contadorDerecho" class="fs-3 mt-2"></p>  
+                
+                    <div class="rounded-3 p-3" style="background: rgb(255, 255, 255, 0.6);">
                         <div class="row">
                             <div class="col-2">
                                 <p class="text-info">VIDA</p>
@@ -160,13 +164,14 @@
                             </div>
                         </div>
                     </div>
-    
+                
                     <img id="avatar2" class="mx-auto d-block" src="./public/img/Veguetta/base.png" width="40%">
                     <button id="btn_atk_py2" disabled type="button" class="btn btn-primary mb-3">ATK Basico</button>
                     <button id="btn_esp_py2" disabled type="button" class="btn btn-danger mb-3">ATK Especial</button>
                     <button id="btn_ermi_py2" disabled type="button" class="btn btn-success mb-3">Semilla <span id="se_p2" class="badge bg-warning">3</span></button>
                     <button id="btn_ki_py2" disabled type="button" class="btn btn-warning mb-3">Cargar Ki</button>
                 </div>
+                
             </div>
 
         </div>

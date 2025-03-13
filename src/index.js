@@ -7,4 +7,3 @@ import './interfaz.js'
 
 //Swal.fire("SweetAlert2 is working!");
 
-let player1= new Game();

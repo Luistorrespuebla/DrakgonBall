@@ -8,6 +8,7 @@ class Game {
     constructor(user_name   ) {
         this.#user_name = user_name        
     }
+
     getVida(){
         return this.#vida;
     }
@@ -23,6 +24,7 @@ class Game {
     getUser_name(){
         return this.#user_name;
     }
+
     setVida(decremento){
         this.#vida -= decremento;
     }
@@ -38,6 +40,16 @@ class Game {
         let masEnergia = this.getEnergia() + aumento;
         this.#energia = masEnergia > 90 ? 90 : masEnergia;
     }
+    setSemilla(aumento){
+        let masSemilla = this.getSemilla() + aumento;
+        this.#semilla = masSemilla > 3 ? 3 : masSemilla;
+    }
+    semilla_ermi(){
+        this.#semilla -= 1;
+        this.aumentoVida(50)
+        this.setKi(40)
+        this.setEnergia(45)
+    }
     atk_basico(jugador){
         this.#ki -= this.#ki < 5 ? 0 : 5;
         this.#energia -= this.#energia < 10 ? 0 : 10;
@@ -50,12 +62,6 @@ class Game {
     }
     cargar_ki(){
         this.setKi(15)
-    }
-    semilla_ermi(){
-        this.#semilla -= 1;
-        this.aumentoVida(50)
-        this.setKi(40)
-        this.setEnergia(45)
     }
 }
 
